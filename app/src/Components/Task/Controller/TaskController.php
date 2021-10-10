@@ -39,7 +39,7 @@ class TaskController extends AbstractController
      * Add task
      *
      * @Rest\Post("/v1/task")
-     * @Rest\View(statusCode=200)
+     * @Rest\View(statusCode=201)
      *
      * @param AddTaskRequest $req
      * @return Response

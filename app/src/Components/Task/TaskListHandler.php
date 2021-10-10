@@ -27,7 +27,6 @@ class TaskListHandler
         foreach ($taskList as $task) {
             $response[] = new TaskItem($task);
         }
-        //var_dump($response);
         return new Response(json_encode(($response)));
     }
 }

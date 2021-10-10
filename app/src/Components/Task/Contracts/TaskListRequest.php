@@ -20,10 +20,10 @@ class TaskListRequest implements RequestDTOInterface
 
     /**
      * @Assert\Type("integer")
-     * @Assert\Range(min = 1, max = 100)
+     * @Assert\Range(min = 0, max = 100)
      * @var int
      */
-    private $limit;
+    private $limit = self::DEFAULT_LIMIT;
 
     /**
      * @Assert\Type("integer")
@@ -35,8 +35,8 @@ class TaskListRequest implements RequestDTOInterface
     public function __construct(Request $req)
     {
         $this->isCompleted = filter_var($req->query->get('isCompleted'), FILTER_VALIDATE_BOOLEAN);
-        $this->limit = (int)$req->query->get('limit') ?? self::DEFAULT_LIMIT;
-        $this->offset = (int)$req->query->get('offset') ?? self::DEFAULT_OFFSET;
+        $this->limit = (int)$req->query->get('limit') ?: self::DEFAULT_LIMIT;
+        $this->offset = (int)$req->query->get('offset') ?: self::DEFAULT_OFFSET;
     }
 
     public function isCompleted(): bool

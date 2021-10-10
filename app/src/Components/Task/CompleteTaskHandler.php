@@ -3,7 +3,7 @@
 namespace App\Components\Task;
 
 use App\Components\Task\Contracts\UpdateTaskRequest;
-use App\Componets\Task\Exception\TaskNotFoundException;
+use App\Components\Task\Exception\TaskNotFoundException;
 use App\Entity\Task;
 use App\Repository\TaskRepository;
 use Doctrine\ORM\EntityManagerInterface;

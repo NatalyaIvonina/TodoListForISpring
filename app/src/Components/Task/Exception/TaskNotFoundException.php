@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace App\Componets\Task\Exception;
+namespace App\Components\Task\Exception;
 
 use App\Infrastructure\Exception\AppException;
 use App\Infrastructure\Exception\AppExceptionContext;
