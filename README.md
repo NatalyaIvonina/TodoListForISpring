@@ -8,7 +8,7 @@
 - Symfony 4.4
 - MySQL
 
-## Разворачивание
+## Развертывание
 ```shell
 composer install
 
@@ -16,6 +16,8 @@ symfony serve
 ```
 ## Swagger
 https://app.swaggerhub.com/apis/NatalyaIvonina/TodoList/1.0.0#/TaskItem
+
+![Image alt](https://github.com/NatalyaIvonina/TodoListForISpring/blob/master/swagger.jpg)
 
 ## Тестирование
 Тесты лежат в App\Tests\Task
